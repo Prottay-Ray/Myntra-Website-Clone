@@ -2,27 +2,49 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    line-height: 22px;
 }
 #navbar {
     display: flex;
     justify-content: space-between;
     height: 90px;
     margin-right: 12px;
+    border-bottom: 2px solid grey;
+}
+#men:hover {
+    border-bottom: 4px solid red;
+}
+#women:hover {
+    border-bottom: 4px solid #FB57C1;
+}
+#kids:hover {
+    border-bottom: 4px solid orange;
+}
+#home:hover {
+    border-bottom: 4px solid yellow;
+}
+#beauty:hover {
+    border-bottom: 4px solid aqua;
 }
 .nav {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-
+    padding-bottom: 0px;
 }
 .catagory {
     padding: 10px;
     padding-top: 28px;
+    padding-bottom: none;
     font-weight: 550;
     cursor: pointer;
+    border: none;
 }
 #logo {
     margin-right: 40px;
+    height: 100%;
+}
+#logo > a > img {
     height: 100%;
 }
 #searchbox {
@@ -74,6 +96,29 @@
 .optn_icon {
     text-align: center;
 }
-.optn_content {
-    /* font-size: 14px; */
+.navHover {
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 3%;
+    padding-inline: 2%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.nav_column {
+    padding-inline: 2%;
+}
+.navListItem:hover {
+    font-weight: bold;
+}
+.navListItem {
+    font-size: 14px;
+    list-style-type: none;
+}
+#nav_women > .nav_column > h3 {
+    color: #FB57C1;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#nav_women > .nav_column:nth-child(2n) {
+    background-color: #FBFBFB;
 }
