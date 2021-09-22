@@ -124,3 +124,30 @@
 #nav_women > .nav_column:nth-child(2n) {
     background-color: #FBFBFB;
 }
+#searchresult {
+    width: 300px;
+    height: 250px;
+    background-color: #F5F5F6;
+    margin-left: 20px;
+    padding: 10px;
+    display: none;
+}
+#searchother {
+    padding: 5px;
+    font-size: 14px;
+    color: #696E79;
+    width: 100%;
+    font-weight: 600;
+    background-color: #EAEAEC;
+}
+#searchlist > li {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #696E79;
+    list-style-type: none;
+}
+#searchlist > li:hover {
+    color: white;
+    background-color: #282C3F;
+}
