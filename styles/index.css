@@ -13,19 +13,19 @@
     border-bottom: 2px solid grey;
 }
 #men:hover {
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #EE5F73;
 }
 #women:hover{
     border-bottom: 4px solid #FB57C1;
 }
 #kids:hover {
-    border-bottom: 4px solid orange;
+    border-bottom: 4px solid #F26A10;
 }
 #home:hover {
-    border-bottom: 4px solid yellow;
+    border-bottom: 4px solid #F2C210;
 }
 #beauty:hover {
-    border-bottom: 4px solid aqua;
+    border-bottom: 4px solid #0DB7AF;
 }
 .nav {
     display: flex;
@@ -78,7 +78,6 @@
 
 #searchicon img {
     padding: 3px;
-
     width: 100%;
     height: 100%;
 }
@@ -94,6 +93,17 @@
     width: 30px;
     height: 30px;
 }
+#menu > div img {
+    width: 40px;
+    height: 50px;
+}
+#menu {
+    border-radius: 6px;
+    border: 1px solid palevioletred;
+    padding: 5px;
+    height: fit-content;
+    display: none;
+}
 .optn_icon {
     text-align: center;
 }
@@ -104,6 +114,8 @@
     padding-inline: 2%;
     margin-top: 10px;
     cursor: pointer;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
     display: none;
 }
 .nav_column {
@@ -116,12 +128,44 @@
     font-size: 14px;
     list-style-type: none;
 }
+#nav_men > .nav_column > h3 {
+    color: #EE5F73;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#nav_men > .nav_column:nth-child(2n) {
+    background-color: #FBFBFB;
+}
 #nav_women > .nav_column > h3 {
     color: #FB57C1;
     margin-bottom: 5px;
     font-size: 16px;
 }
 #nav_women > .nav_column:nth-child(2n) {
+    background-color: #FBFBFB;
+}
+#nav_kids > .nav_column > h3 {
+    color: #F26A10;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#nav_kids > .nav_column:nth-child(2n) {
+    background-color: #FBFBFB;
+}
+#nav_home > .nav_column > h3 {
+    color: #F2C210;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#nav_home > .nav_column:nth-child(2n) {
+    background-color: #FBFBFB;
+}
+#nav_beauty > .nav_column > h3 {
+    color: #0DB7AF;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#nav_beauty > .nav_column:nth-child(2n) {
     background-color: #FBFBFB;
 }
 #searchresult {
@@ -151,3 +195,58 @@
     color: white;
     background-color: #282C3F;
 }
+@media only screen and (min-width: 600px) {
+    .catagory {
+        display: none;
+    }
+    #logo {
+        margin-right: 0px;
+    }
+    #navbar {
+        justify-content: space-around;
+    }
+    #menu {
+        display: block;
+    }
+    .optn {
+        display: none;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .catagory {
+        display: none;
+    }
+    #logo {
+        margin-right: 40px;
+    }
+    #navbar {
+        justify-content: space-evenly;
+    }
+    #menu {
+        display: block;
+    }
+    .optn {
+        display: block;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .catagory {
+        display: block;
+    }
+    #logo {
+        margin-right: 40px;
+    }
+    #navbar {
+        justify-content: space-between;
+    }
+    #menu {
+        display: none;
+    }
+    .optn {
+        display: block;
+    }
+} 
