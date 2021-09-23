@@ -12,7 +12,7 @@
     height: 90px;
     border-bottom: 2px solid grey;
 }
-#men:hover {
+#men:hover, #profile:hover {
     border-bottom: 4px solid #EE5F73;
 }
 #women:hover{
@@ -106,6 +106,53 @@
 }
 .optn_icon {
     text-align: center;
+}
+.optn_content p {
+    text-align: center;
+}
+#insider {
+    position: absolute;
+    transform: skew(-10deg) translatex(10px);
+    border-radius: 3px;
+    transform-origin: bottom left;
+    color: white;
+    font-weight: bolder;
+    padding: 1px;
+    padding-inline: 6px;
+    background-color: #FE5F73;
+    font-size: 12px;
+}
+#log {
+    padding: 10px;
+    border: 1px solid lightgray;
+    color: #FE5F73;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    margin: 6%;
+}
+#logOpt > li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 2px;
+}
+#logOpt > li:hover{
+    font-weight: bold;
+}
+#profile_section {
+    width: 78px;
+    overflow: visible;
+}
+#profile_options {
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    width: max-content;
+    transform: translatex(-80px);
+}
+#log:hover {
+    border: 1px solid #FE5F73;
 }
 .navHover {
     display: flex;
