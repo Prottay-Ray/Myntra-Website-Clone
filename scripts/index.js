@@ -94,3 +94,44 @@ function vanish() {
     homenav.style.display = "none";
     beautynav.style.display = "none";
 }
+
+
+let debounceTimer;
+let searchList = document.getElementById('searchlist');
+let searchWindow = document.getElementById('searchresult');
+
+async function autoComplete() {
+    let val = search.value;
+    // alert('Hare Krishna')
+    if (val.length < 3) {
+        return;
+    }
+    let count = 0;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(async () => {
+        let a = await fetch(`https://kohls.p.rapidapi.com/auto-complete?query=${val}`, {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "kohls.p.rapidapi.com",
+                "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
+            }
+        });
+        let b = await a.json();
+        //console.log("Response: ", b.Suggestions);
+        searchWindow.style.display = "block";
+        searchList.innerHTML = null;
+
+        b.Suggestions.forEach(element => {
+            //console.log("Response: ", element[0]);
+            let li = document.createElement('li');
+            li.innerText = element[0];
+            if (count == 0) {
+                li.focus();
+                count = 1;
+            }
+            searchList.appendChild(li);
+        });
+    }, 1000);
+}
+
+search.addEventListener('input', autoComplete);

@@ -250,6 +250,10 @@ hr {
     font-weight: 600;
     background-color: #EAEAEC;
 }
+#searchother {
+    max-height: 100%;
+    overflow-y: auto;
+}
 #searchlist > li {
     padding: 5px;
     font-size: 14px;
