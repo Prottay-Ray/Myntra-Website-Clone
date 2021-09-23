@@ -93,7 +93,7 @@
     width: 30px;
     height: 30px;
 }
-#menu > div img {
+#menu > div > img {
     width: 40px;
     height: 50px;
 }
@@ -101,7 +101,16 @@
     border-radius: 6px;
     border: 1px solid palevioletred;
     padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
     height: fit-content;
+    display: none;
+}
+#addApp > div > img {
+    margin: 4px;
+    height: 50px;
+}
+#addApp {
     display: none;
 }
 .optn_icon {
@@ -145,11 +154,21 @@
     overflow: visible;
 }
 #profile_options {
-    margin-top: 6px;
+    display: none;
+    margin-top: 2px;
     padding: 8px;
     border: 1px solid lightgray;
     width: max-content;
     transform: translatex(-80px);
+    height: 70vh;
+    overflow-y: auto;
+    background-color: white;
+}
+#profile:hover + #profile_options, #profile_options:hover {
+    display: block;
+}
+hr {
+    margin-top: 8px;
 }
 #log:hover {
     border: 1px solid #FE5F73;
@@ -258,6 +277,9 @@
     .optn {
         display: none;
     }
+    #addApp {
+        display: block;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -275,6 +297,9 @@
         display: block;
     }
     .optn {
+        display: block;
+    }
+    #addApp {
         display: block;
     }
 } 
@@ -295,5 +320,8 @@
     }
     .optn {
         display: block;
+    }
+    #addApp {
+        display: none;
     }
 } 
