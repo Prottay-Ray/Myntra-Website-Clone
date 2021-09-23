@@ -261,7 +261,7 @@ hr {
     color: white;
     background-color: #282C3F;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 50px) {
     .catagory {
         display: none;
     }
