@@ -181,6 +181,7 @@ input:focus::placeholder {
     border: 1px solid gray;
     background-color: white;
     border-radius: 50%;
+    overflow: hidden;
     left: 49%;
     top: 49%;
     position: fixed;
