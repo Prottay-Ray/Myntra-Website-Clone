@@ -311,6 +311,26 @@ hr {
     justify-content: space-between;
 }
 
+.slides {
+    display: flex;
+    justify-items: normal;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0px;
+    scrollbar-track-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.slide {
+    scroll-snap-align: start;
+}
+.slideImg {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
 @media only screen and (min-width: 50px) {
     .catagory {
         display: none;
