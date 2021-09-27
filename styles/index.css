@@ -10,7 +10,8 @@
     top: 0;
     justify-content: space-between;
     height: 90px;
-    border-bottom: 2px solid grey;
+    /* border-bottom: 2px solid rgba(150, 150, 150, 0.3); */
+    box-shadow: 2px 2px 2px 2px lightgray ;
     background-color: white;
 }
 #men:hover, #profile:hover {
@@ -205,6 +206,8 @@ hr {
     width: 80vw;
     left: 5%;
     background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    margin-top: 2px;
 }
 #men:hover + #nav_men, #nav_men:hover{
     display: flex;
