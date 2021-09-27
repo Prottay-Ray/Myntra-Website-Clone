@@ -11,6 +11,7 @@
     justify-content: space-between;
     height: 90px;
     border-bottom: 2px solid grey;
+    background-color: white;
 }
 #men:hover, #profile:hover {
     border-bottom: 4px solid #EE5F73;
@@ -193,15 +194,32 @@ hr {
     border: 1px solid #FE5F73;
 }
 .navHover {
-    display: flex;
     justify-content: space-evenly;
     margin-inline: 3%;
     padding-inline: 2%;
-    margin-top: 10px;
     cursor: pointer;
     border: 1px solid gainsboro;
     border-radius: 8px;
     display: none;
+    position: absolute;
+    width: 80vw;
+    left: 5%;
+    background-color: white;
+}
+#men:hover + #nav_men, #nav_men:hover{
+    display: flex;
+}
+#women:hover + #nav_women, #nav_women:hover{
+    display: flex;
+}
+#kids:hover + #nav_kids, #nav_kids:hover{
+    display: flex;
+}
+#home:hover + #nav_home, #nav_home:hover{
+    display: flex;
+}
+#beauty:hover + #nav_beauty, #nav_beauty:hover{
+    display: flex;
 }
 .nav_column {
     padding-inline: 2%;
@@ -284,6 +302,12 @@ hr {
     color: white;
     background-color: #282C3F;
 }
+.catagory {
+    padding-bottom: 25px;
+    overflow: visible;
+    justify-content: space-between;
+}
+
 @media only screen and (min-width: 50px) {
     .catagory {
         display: none;
