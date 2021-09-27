@@ -310,14 +310,35 @@ hr {
     overflow: visible;
     justify-content: space-between;
 }
-
+@keyframes move {
+    0% {
+        margin-left: 0px;
+      }
+      25% {
+        margin-left: -100%;
+      }
+      75% {
+        margin-left: -200%;
+      }
+      100% {
+        margin-left: -300%;
+      }
+  }
 .slides {
     display: flex;
     justify-items: normal;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: 0px;
-    scrollbar-track-color: transparent;
+    scroll-behavior: smooth;
+    animation-name: move;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-direction: right;
+    animation-timing-function: linear;
+}
+.slides:hover {
+    animation-play-state: paused;
 }
 ::-webkit-scrollbar {
     width: 0px;
