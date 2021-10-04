@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     line-height: 22px;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
 #navbar {
     display: flex;
@@ -351,6 +352,82 @@ hr {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover !important;
+}
+.flex {
+    display: flex;
+}
+#visibleDiv {
+    background-color: #535766;
+    cursor: pointer;
+    color: white;
+    height: 288px;
+    width: 44px;
+}
+#rightBanner {
+
+}
+#floatInAd {
+    background: linear-gradient(90deg, #FDE3F3, #FEF9E5);
+    color: #3e4152;
+}
+.ad-below-section p {
+    font-size: 13px;
+    font-weight: 500;
+}
+#avail-ad {
+    font-size: 12px;
+    font-weight: 500;
+}
+#ad-below {
+    padding: 8px 22px;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+#ad-off {
+    font-weight: 700;
+    font-size: 48px;
+}
+#ad-middle {
+    display: flex;
+    
+}
+#coupon-label {
+    font-size: 15px;
+    font-weight: 500;
+}
+#ad-coupon-code {
+    font-size: 18px;
+    font-weight: 700;
+}
+#ad-signup-button {
+    color: white;
+    background-color: #FF3F6C;
+    line-height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 22px;
+}
+#applicable {
+    font-size: 12px;
+    font-weight: 400;
+}
+#floatInAd {
+    flex-direction: column;
+}
+#ad-freeDel {
+    font-weight: 700;
+    font-size: 34px;
+}
+.ad-below-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#flat_ad {
+    transform: rotateZ(-90deg);
 }
 
 @media only screen and (min-width: 50px) {
