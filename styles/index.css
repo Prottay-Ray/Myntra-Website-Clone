@@ -206,6 +206,7 @@ hr {
     width: 80vw;
     left: 5%;
     background-color: white;
+    transition: all 1s ease-in-out;
     box-shadow: 1px 1px 1px 1px lightgray;
     margin-top: 2px;
 }
